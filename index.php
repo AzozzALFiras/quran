@@ -21,13 +21,16 @@ function is_url_exist($url){
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
+  <meta name="Author" content="Azozz ALFiras">
+  <meta name="keywords" content="istore,Azozz ALFiras,scothman,apps plus,quran,القران الكريم,موقع للقران الكريم,ادرس ابكر,ابو بكر الشاطري">
+  <meta name="description" content="موقع القران الكريم كامل واكثر من 20 قارئ مع التشغيل في الخلفية مجانا">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width">
   <title>الاستماع للقرآن الكريم </title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
-
- <link rel="stylesheet" href="font.css">
+  <link rel="stylesheet" href="font.css">
   <link rel="stylesheet" href="css/bootstrap.min.css" media="screen" title="no title">
   <script src="js/jquery-3.1.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
@@ -37,6 +40,63 @@ function is_url_exist($url){
 
 
 </head>
+
+<style>
+
+body{
+    background: url(imgae/az5.png);
+}
+
+.bg {
+  background: #111 url(imgae/az1.png) center top no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+}
+
+.b_1 {
+  background-image: url(imgae/az1.png);
+}
+
+.b_2 {
+  background-image: url(imgae/az2.png);
+}
+
+.b_3 {
+  background-image: url(imgae/az3.png);
+}
+
+.b_4 {
+  background-image: url(imgae/az4.png);
+}
+
+.b_5 {
+  background-image: url(imgae/az5.png);
+}
+
+.b_6 {
+  background-image: url(imgae/az6.png);
+}
+
+.b_7 {
+  background-image: url(imgae/az7.png);
+}
+
+.b_8 {
+  background-image: url(imgae/az8.png);
+}
+
+.b_9 {
+  background-image: url(imgae/az9.png);
+}
+
+.b_10 {
+  background-image: url(imgae/az10.png);
+}
+
+
+</style>
 <body>
 
 <nav class="navbar navbar-default">
@@ -50,10 +110,11 @@ function is_url_exist($url){
             <span class="icon-bar"></span>
           </button>
 
-          <a class="navbar-brand" href="http://zeexpert.net/"><img src="https://zeexpert.net/wp-content/themes/TechPress/img/dark.png" style="width: 160px;"></a>
+          <a class="navbar-brand" href="https://a1iraqi.com/"><img src="imgae/pro.png" style="width: 160px;border-radius: 10px;"></a>
 <br>
 <br>
 <br>
+<br><br><br><br><br>
         </div>
 <br><br>
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -65,10 +126,10 @@ for ($i=1; $i < count($shaikh) ; $i++) {
 	}else {
 		$current = '';
 	}
-	echo "<li class=\"$current\"><a href=\"?q=$i\"><img src=\"thumbs/$i.jpg\" alt=''> <span>" . $shaikh[$i]['name'] . "</span></a></li>";
+	echo "<li class=\"$current\"><a href=\"?q=$i\"><img src=\"imgae/$i.jpg\" alt=''> <span>" . $shaikh[$i]['name'] . "</span></a></li>";
 }
 ?>
- 
+ <br>
           
         </div>
       </div>
@@ -82,7 +143,7 @@ for ($i=1; $i < count($shaikh) ; $i++) {
 		<div class="bg clfx">
 			<div class="s-info">
 				<?php
-				echo "<img class=\"sh-avatar\" src=\"thumbs/$q.jpg\" alt=\"\">";
+				echo "<img class=\"sh-avatar\" src=\"imgae/$q.jpg\" alt=\"\">";
 				echo "<h3>". $shaikh[$q]['name'] . "</h3>";
 				 ?>
 			 </div>
